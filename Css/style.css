@@ -1,0 +1,204 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bree Serif', serif;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation Bar */
+#navBar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+/* Logo and Image :NavBar*/
+#logo{
+    margin: 34px 45px;
+}
+#logo img{
+    margin: -28px -25px;
+    height: 75px;
+}
+
+/* Styling of list items :Nav Br */
+
+#navBar ul{
+    display: flex;
+}
+#navBar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navBar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navBar ul li a{
+    color: white;
+    font-size: 1.7rem;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+
+}
+
+#navBar ul li a:hover{
+    color: rgb(126, 12, 50);
+    
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../Images/output-onlinejpgtools\ \(3\).png') no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 2.89;
+}
+
+#home h1{
+    color:#d81b60;
+    text-align: center;
+    font-size: 3.5rem;
+}
+#home p{
+    color: #d32f2f;
+    text-align: center;
+    font-size: 1.5rem;
+    opacity: 23;
+}
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 4px solid brown;
+    padding: 34px;
+    margin: 0px 6px;
+    border-radius: 25px;
+    
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+/* Resgistration Form */
+#container{
+    border: 4px solid rgb(146, 50, 66);
+margin: 94px auto;
+padding: 77px;
+width: 37%;
+border-radius: 28px;
+}
+.form-group input{
+    text-align: center;
+display: block;
+width: 500px;
+padding: 5px;
+margin: 13px auto;
+border: 2px solid yellow;
+border-radius: 10px;
+font-size: 21px;
+font-family: 'Baloo 2', cursive;
+} 
+#container h1{
+    text-align: center;
+}
+#container button{
+    display: block;
+width: 500px;
+margin: 25px auto;
+}
+
+
+/* Our Team */
+#team-section{
+    position: relative;
+    height: 240px;
+    
+}
+#team-section::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(160, 115, 31);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+#team-members{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member-item{
+    padding: 30px;
+}
+#team-members img{
+    height: 140px;
+}
+h1 .h1-primary-center{
+    font-size: 3.2rem;
+}
+
+/* Utility Classes */
+.h1-primary-center{
+    font-size: 3rem;
+    padding: 25px;
+    text-align: center;
+}
+.h2-secondary{
+    font-size: 2.3rem;
+    padding: 12px; 
+    text-align: center;
+}
+.btn{
+    padding: 5px 20px;
+    border: 3px solid black;
+    background-color: rgb(228, 216, 216);
+    border-radius: 10px;
+    margin: 17px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(214, 103, 103);
+}
+.center{
+    text-align: center;
+}
