@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "montserrat" ,sans-serif;
+    font-family: sans-serif;
 }
 .Reviews{
     padding: 50px 0;
@@ -14,6 +14,11 @@
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
+}
+.inside h1{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
 }
 .border{
     width: 160px;
@@ -41,5 +46,29 @@
 .testimonial img{
     width: 100px;
     height: 100px;
-    
+    border-radius: 70px;  
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.stars{
+    color: #f1c40f;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:960px){
+    .column{
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
 }
